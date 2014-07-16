@@ -1,0 +1,54 @@
+<div id="page-caption">
+  <h2>B<span>adge-like</span> I<span>mageSVG</span> G<span>enerator</span> W<span>ith</span> A<span>ny</span> F<span>ilter</span></h2>
+</div>
+
+<div class="row">
+  <div class="col-sm-2" id="selector-left">
+    <div class="bs-component">
+      <div class="btn-group btn-group-vertical center-block" data-toggle="buttons">
+      <% croping_list.each do |croping| %>
+      <label class="btn btn-default">
+        <%= t("views.home.croping.#{croping}") %>
+        <input type="radio" id="<%= croping %>" name="croping" value="<%= croping %>" />
+      </label>
+      <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8 clearfix">
+    <div class="bs-component">
+      <div id="droparea">
+        <div class="dropareainner">
+          <div>Drop files or Click here</div>
+          <div id="err">Wait there! You must ENABLE Javascript to have this works!</div>
+        </div>
+      </div>
+      <input id="select" type="file" multiple />
+      <div id="image-size-wrap" class="pull-right" >
+        <label>Image Width or Height (px)
+          <input type="number" name="image-size" class="input-sm" min="16">
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-2" id="selector-right">
+    <div class="bs-component">
+    <div class="btn-group btn-group-vertical center-block" data-toggle="buttons">
+      <% effect_list.each do |effect| %>
+      <label class="btn btn-default">
+        <%= t("views.home.effect.#{effect}") %>
+        <input type="radio" id="<%= effect %>" name="effect" value="<%= effect %>" />
+      </label>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="result"></div>
+
+<% content_for :page_javascript do %>
+  <% render partial: 'template' %>
+<% end %>

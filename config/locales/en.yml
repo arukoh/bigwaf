@@ -1,0 +1,15 @@
+en:
+  views:
+    home:
+      croping:
+        none: No Crop
+        square: Square
+        circle: Circle
+      effect:
+        none: No Effect
+        grayscale: Grayscale
+        blur: Blur
+        sepia: Sepia
+        saturate: Saturate
+        hue_rotate: HueRotate
+        invert: Invert
