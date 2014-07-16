@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.0.0
+- 2.1.2
+- ruby-head
+deploy:
+  provider: heroku
+  api_key:
+    secure: KhOuL3bo/yDTvqgy3wBR4OErkKUcfIcYK/fobvzzrCh0vJIw1Q2hr5cVMc4ZezupnL3TsE8IB7t7j0vtwa6hE25kuu7kVv52MJcvJmYuDD/PsIslCuAfgii2SH9/FX3QeDZBQDfiC057caZi3FsvdODe3t22DPs7aPHjuXnSv14=
+  app: bigwaf
+  on:
+    repo: arukoh/Hooker
+    branch: master
+    rvm: 2.0.0
