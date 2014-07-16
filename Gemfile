@@ -51,4 +51,3 @@ end
 gem 'twitter-bootswatch-rails', :github => 'scottvrosenthal/twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
 
-ruby '2.0.0'
