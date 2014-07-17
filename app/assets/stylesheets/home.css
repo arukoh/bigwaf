@@ -24,13 +24,11 @@
   letter-spacing:3px;
   font-family:Arial, sans-serif;
 }
-#page-caption h3{
-  font-style:italic;
-  font-weight:normal;
-  font-size:18px;
-  text-shadow:1px 1px 0 #ccc;
-  color:#888;
-  margin:5px 0;
+.social-btn{
+  line-height: 0;
+}
+.social-btn >*{
+  vertical-align: bottom;
 }
 
 #droparea{
