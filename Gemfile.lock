@@ -1,12 +1,3 @@
-GIT
-  remote: git://github.com/scottvrosenthal/twitter-bootswatch-rails.git
-  revision: df0eeafc1edef85c6fa3d4a22eba8e2c79b34bcf
-  specs:
-    twitter-bootswatch-rails (3.2.0.0)
-      execjs (>= 1.4.0)
-      less-rails (>= 2.3)
-      railties (>= 3.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,7 +48,7 @@ GEM
     execjs (2.2.1)
     hike (1.2.3)
     i18n (0.6.11)
-    jbuilder (2.1.2)
+    jbuilder (2.1.3)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.1)
@@ -151,6 +142,10 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
+    twitter-bootswatch-rails (3.2.0.0)
+      execjs (>= 1.4.0)
+      less-rails (>= 2.3)
+      railties (>= 3.1)
     twitter-bootswatch-rails-helpers (3.2.0.0)
       twitter-bootswatch-rails (~> 3.2.0)
     tzinfo (1.2.1)
@@ -181,7 +176,7 @@ DEPENDENCIES
   sqlite3
   therubyracer
   turbolinks
-  twitter-bootswatch-rails!
+  twitter-bootswatch-rails
   twitter-bootswatch-rails-helpers
   uglifier (>= 1.3.0)
   unicorn

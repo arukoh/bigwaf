@@ -48,6 +48,6 @@ group :production do
   gem 'unicorn'
 end
 
-gem 'twitter-bootswatch-rails', :github => 'scottvrosenthal/twitter-bootswatch-rails'
+gem 'twitter-bootswatch-rails'
 gem 'twitter-bootswatch-rails-helpers'
 
