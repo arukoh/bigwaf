@@ -53,6 +53,25 @@
 
 <div id="result"></div>
 
+<div id="preview-modal" class="modal" aria-hidden="false" style="display: none;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="preview-modal-thumbnail" class="thumbnail">
+          <img id="preview-modal-image" src="" alt="...">
+        </div>
+        <div id="preview-modal-links">
+          <a id="preview-modal-svg-link" href="" download=""><i class="glyphicon glyphicon-save"></i> Save as SVG</a>
+          <a id="preview-modal-png-link" href="" download=""><i class="glyphicon glyphicon-save"></i> Save as PNG</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <% content_for :page_javascript do %>
-  <% render partial: 'template' %>
+<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
 <% end %>
+
+<% render partial: 'preview' %>
+<% render partial: 'svg' %>

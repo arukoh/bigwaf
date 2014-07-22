@@ -1,0 +1,14 @@
+<% content_for :page_javascript do %>
+<script id="preview-template" type="text/x-jquery-tmpl"> 
+<div class="image-holder" >
+  <figure data-toggle="tooltip" data-placement="bottom" title="${name}">
+    <div class="wrap-svg" >
+    </div>
+    <figcaption>${effect}(${realWidth} x ${realHeight})</figcaption>
+  </figure>
+  <a id="preview-btn" class="btn btn-link btn-mini btn-block" data-toggle="modal" href="#preview-modal">
+    <i class="glyphicon glyphicon-eye-open"></i> View
+  </a>
+</div>
+</script>
+<% end %>

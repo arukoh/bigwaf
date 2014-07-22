@@ -1,5 +1,5 @@
 /*
-*/
+ */
 #page-caption {
   text-align:center;
   font-size:33px;
@@ -120,8 +120,23 @@ figure, figcaption{
   font-weight:bold;
   font-size:12px;
 }
-#result .image-holder #save-btn{
+#result .image-holder a{
   padding:0;
   margin-top:5px;
   font-weight:normal;
+}
+
+#preview-modal .modal-content{
+  background-color:rgba(0, 0, 0, 0.5);
+}
+#preview-modal-thumbnail{
+  background:none;
+  border:none;
+}
+#preview-modal-links{
+  width:100%;
+  text-align:center;
+}
+#preview-modal-svg-link, #preview-modal-png-link{
+  margin:0 20px;
 }
