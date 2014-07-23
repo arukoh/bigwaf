@@ -64,7 +64,7 @@ $(function() {
 
     for(var i=0; i<files.length; i++) {
       var file = files[i];
-//      if (file.type.match(/image.*/)) {
+      if (file.type.match(/image.*/)) {
         var id = Math.random().toString(36).slice(-8);
         previews[id] = {
           id:      id,
@@ -76,9 +76,9 @@ $(function() {
         }
         createPreview(previews[id]);
         $('#err').text('');
-//      } else {
-//        $('#err').text('*Selected file format not supported!');
-//      }
+      } else {
+        $('#err').text('*Selected file format not supported!');
+      }
     }
   }
 
